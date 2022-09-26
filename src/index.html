@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('html/_head.html', {
+        "title": "Main page"
+    })
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="@css/main-page.min.css">
+</head>
+<body class="_preload">
+
+
+    <div class="page-menu slideout-menu">
+        <div class="page-menu__wrapper">
+            <div class="page-menu__close-btn ibg">
+                <img src="@svg/cross.svg" alt="">
+            </div>
+
+            <div class="page-menu__list">
+                <ul>
+                    <li>Дачи</li>
+                    <li>План</li>
+                    <li>Объекты</li>
+                    <li>О нас</li>
+                    <li>Контакты</li>
+                </ul>
+            </div>
+
+            <span class="page-menu__phone">
+                <img src="@svg/phone.svg" alt="">
+                +38 071 475 87 65
+            </span>
+        </div>
+    </div>
+
+    <div class="page-blackout _blackout"></div>
+
+    <main class="page">
+        @@include('html/_header.html', {})
+
+        <section class="page__intro-block intro-block fullscreen">
+            <div class="fullscreen__body">
+                <div class="intro-block__content  _container">
+                    <div class="intro-block__text-block">
+                        <span class="intro-block__secondary-title">Дизайн и проектирование</span>
+
+                        <h1 class="intro-block__title">ДАЧНЫХ ОБЪЕКТОВ</h1>
+
+                        <p class="intro-block__text">Готовый дом уже на вашем участке через 30 дней!</p>
+
+                        <a href="#" class="intro-block__btn">Закажите проект</a>
+                    </div>
+
+                    <div data-da=".page__intro-block,768" class="intro-block__choose-project choose-project-block">
+                        <div class="choose-project-block__wrapper">
+                            <div class="choose-project-block__settings">
+                                <div class="choose-project-block__setting-item project-setting">
+                                    <span class="project-setting__title">ЛОКАЦИЯ</span>
+                                    <div class="project-setting__input input-project-setting">
+                                        <span class="input-project-setting__value input-project-setting__value--inactive">Любое</span>
+                                        <img class="input-project-setting__arrow" src="@svg/list-arrow.svg" alt="">
+
+                                        <ul class="input-project-setting__list input-project-setting__list">
+                                            <li class="input-project-setting__item">1</li>
+                                            <li class="input-project-setting__item">2</li>
+                                            <li class="input-project-setting__item">3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="choose-project-block__setting-item project-setting">
+                                    <span class="project-setting__title">ВАННЫЕ КОМНАТЫ</span>
+                                    <div class="project-setting__input input-project-setting">
+                                        <span class="input-project-setting__value input-project-setting__value--inactive">Кол-во</span>
+                                        <img class="input-project-setting__arrow" src="@svg/list-arrow.svg" alt="">
+
+                                        <ul class="input-project-setting__list">
+                                            <li class="input-project-setting__item">1</li>
+                                            <li class="input-project-setting__item">2</li>
+                                            <li class="input-project-setting__item">3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="choose-project-block__setting-item project-setting">
+                                    <span class="project-setting__title">ГОСТИННЫХ</span>
+                                    <div class="project-setting__input input-project-setting">
+                                        <span class="input-project-setting__value input-project-setting__value--inactive">Кол-во</span>
+                                        <img class="input-project-setting__arrow" src="@svg/list-arrow.svg" alt="">
+
+                                        <ul class="input-project-setting__list">
+                                            <li class="input-project-setting__item">1</li>
+                                            <li class="input-project-setting__item">2</li>
+                                            <li class="input-project-setting__item">3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="choose-project-block__setting-item project-setting">
+                                    <span class="project-setting__title">СПАЛЬНЫЕ КОМНАТЫ</span>
+                                    <div class="project-setting__input input-project-setting">
+                                        <span class="input-project-setting__value input-project-setting__value--inactive">Кол-во</span>
+                                        <img class="input-project-setting__arrow" src="@svg/list-arrow.svg" alt="">
+
+                                        <ul class="input-project-setting__list">
+                                            <li class="input-project-setting__item">1</li>
+                                            <li class="input-project-setting__item">2</li>
+                                            <li class="input-project-setting__item">3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="choose-project-block__setting-item project-setting">
+                                    <span class="project-setting__title">ГАРАЖ</span>
+                                    <div class="project-setting__input input-project-setting">
+                                        <span class="input-project-setting__value input-project-setting__value--inactive">Кол-во</span>
+                                        <img class="input-project-setting__arrow" src="@svg/list-arrow.svg" alt="">
+
+                                        <ul class="input-project-setting__list">
+                                            <li class="input-project-setting__item">1</li>
+                                            <li class="input-project-setting__item">2</li>
+                                            <li class="input-project-setting__item">3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="choose-project-block__setting-item project-setting">
+                                    <span class="project-setting__title">КУХНИ</span>
+                                    <div class="project-setting__input input-project-setting">
+                                        <span class="input-project-setting__value input-project-setting__value--inactive">Кол-во</span>
+                                        <img class="input-project-setting__arrow" src="@svg/list-arrow.svg" alt="">
+
+                                        <ul class="input-project-setting__list">
+                                            <li class="input-project-setting__item">1</li>
+                                            <li class="input-project-setting__item">2</li>
+                                            <li class="input-project-setting__item">3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="choose-project-block__search search-choose-project">
+                                <span class="search-choose-project__title">Подберите<br />готовый проект</span>
+
+                                <button class="search-choose-project__btn">
+                                    Поиск
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page__stages-block stages-block">
+            <div class="stages-block__container _container">
+                <div class="stages-block__content">
+                    <div class="section-title">
+                        <div class="section-title__arrow-border">
+                            <div class="section-title__arrow">
+                                <div class="section-title__stick"></div>
+
+                                <img src="@svg/arrow-down.svg" alt="">
+                            </div>
+                        </div>
+
+                        <span class="section-title__text">ЭТАПЫ</span>
+                    </div>
+
+                    <div class="stages-block__list">
+                        <ul>
+                            <li class="stages-block__item item-stages-block">
+                                <div class="item-stages-block__wrapper">
+                                    <div class="item-stages-block__image-border">
+                                        <img src="@svg/search.svg" alt="">
+                                    </div>
+
+                                    <span class="item-stages-block__text">
+                                        Замер<br />объекта
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li class="stages-block__line stages-block__line--upper"></li>
+
+                            <li class="stages-block__item stages-block__item--upper item-stages-block">
+                                <div class="item-stages-block__wrapper">
+                                    <div class="item-stages-block__image-border">
+                                        <img src="@svg/pencil.svg" alt="">
+                                    </div>
+
+                                    <span class="item-stages-block__text">
+                                        Составление<br />сметы
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li class="stages-block__line"></li>
+
+                            <li class="stages-block__item item-stages-block">
+                                <div class="item-stages-block__wrapper">
+                                    <div class="item-stages-block__image-border">
+                                        <img src="@svg/document.svg" alt="">
+                                    </div>
+
+                                    <span class="item-stages-block__text">
+                                        Заключение<br />договора
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li class="stages-block__line stages-block__line--upper"></li>
+
+                            <li class="stages-block__item stages-block__item--upper item-stages-block">
+                                <div class="item-stages-block__wrapper">
+                                    <div class="item-stages-block__image-border">
+                                        <img src="@svg/money.svg" alt="">
+                                    </div>
+
+                                    <span class="item-stages-block__text">
+                                        Предоплата за<br />материалы
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li class="stages-block__line"></li>
+
+                            <li class="stages-block__item item-stages-block">
+                                <div class="item-stages-block__wrapper">
+                                    <div class="item-stages-block__image-border">
+                                        <img src="@svg/truck.svg" alt="">
+                                    </div>
+
+                                    <span class="item-stages-block__text">
+                                        Закупка<br />материалов
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li class="stages-block__line stages-block__line--upper"></li>
+
+                            <li class="stages-block__item stages-block__item--upper item-stages-block">
+                                <div class="item-stages-block__wrapper">
+                                    <div class="item-stages-block__image-border">
+                                        <img src="@svg/gear.svg" alt="">
+                                    </div>
+
+                                    <span class="item-stages-block__text">
+                                        Выполнение<br />работ
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li class="stages-block__line"></li>
+
+                            <li class="stages-block__item item-stages-block">
+                                <div class="item-stages-block__wrapper">
+                                    <div class="item-stages-block__image-border">
+                                        <img src="@svg/wallet.svg" alt="">
+                                    </div>
+
+                                    <span class="item-stages-block__text">
+                                        Полная<br />оплата
+                                    </span>
+                                </div>
+                            </li>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page__our-projects-block our-projects-block">
+            <div class="our-projects-block__container _container">
+                <div class="our-projects-block__content">
+                    <div class="section-title">
+                        <div class="section-title__arrow-border">
+                            <div class="section-title__arrow">
+                                <div class="section-title__stick"></div>
+
+                                <img src="@svg/arrow-down.svg" alt="">
+                            </div>
+                        </div>
+
+                        <span class="section-title__text">НАШИ ПРОЕКТЫ</span>
+                    </div>
+
+                    <div class="our-projects-block__slider slider-our-projects">
+                        <button class="slider-our-projects__arrow slider-our-projects__arrow--prev swiper-button-prev">
+                            <img src="@svg/slider-arrow-L.svg" alt="">
+                        </button>
+                        <div class="slider-our-projects__list swiper swiper-container">
+                            <div class="slider-our-projects__list-wrapper swiper-wrapper">
+                                <div class="slider-our-projects__slide slide-our-projects swiper-slide">
+                                    <div class="slide-our-projects__wrapper">
+                                        <div class="slide-our-projects__image ibg">
+                                            <img src="@img/slider-our-projects/img-1.png" alt="">
+                                        </div>
+
+                                        <div class="slide-our-projects__content" data-swiper-parallax="-100">
+                                            <div class="slide-our-projects__col">
+                                                <span class="slide-our-projects__title">Дом YU-245</span>
+
+                                                <ul class="slide-our-projects__advantages">
+                                                    <li>Роскошное качество</li>
+                                                    <li>Отлично подходит для большой семьи</li>
+                                                    <li>Идеально подходит для вечеринок</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="slide-our-projects__col">
+                                                <div class="slide-our-projects__price price-slide-our-projects">
+                                                    <span class="price-slide-our-projects__small">От</span>
+                                                    <span class="price-slide-our-projects__big">43 800 000</span>
+                                                    <span class="price-slide-our-projects__small">Руб</span>
+                                                </div>
+
+                                                <ul class="slide-our-projects__characteristics">
+                                                    <li><b>605</b> м³</li>
+                                                    <li><b>2</b> Этажа</li>
+                                                    <li><b>8</b> Комнат</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="slider-our-projects__slide slide-our-projects swiper-slide">
+                                    <div class="slide-our-projects__wrapper">
+                                        <div class="slide-our-projects__image ibg">
+                                            <img src="@img/slider-our-projects/img-2.png" alt="">
+                                        </div>
+
+                                        <div class="slide-our-projects__content" data-swiper-parallax="-100">
+                                            <div class="slide-our-projects__col">
+                                                <span class="slide-our-projects__title">Коттедж ZH-405</span>
+
+                                                <ul class="slide-our-projects__advantages">
+                                                    <li>Роскошное качество</li>
+                                                    <li>Отлично подходит для большой семьи</li>
+                                                    <li>Идеально подходит для вечеринок</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="slide-our-projects__col">
+                                                <div class="slide-our-projects__price price-slide-our-projects">
+                                                    <span class="price-slide-our-projects__small">От</span>
+                                                    <span class="price-slide-our-projects__big">25 499 000</span>
+                                                    <span class="price-slide-our-projects__small">Руб</span>
+                                                </div>
+
+                                                <ul class="slide-our-projects__characteristics">
+                                                    <li><b>605</b> м³</li>
+                                                    <li><b>2</b> Этажа</li>
+                                                    <li><b>8</b> Комнат</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="slider-our-projects__slide slide-our-projects swiper-slide">
+                                    <div class="slide-our-projects__wrapper">
+                                        <div class="slide-our-projects__image ibg">
+                                            <img src="@img/slider-our-projects/img-3.png" alt="">
+                                        </div>
+
+                                        <div class="slide-our-projects__content" data-swiper-parallax="-100">
+                                            <div class="slide-our-projects__col">
+                                                <span class="slide-our-projects__title">Усадьба QE-134</span>
+
+                                                <ul class="slide-our-projects__advantages">
+                                                    <li>Роскошное качество</li>
+                                                    <li>Отлично подходит для большой семьи</li>
+                                                    <li>Идеально подходит для вечеринок</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="slide-our-projects__col">
+                                                <div class="slide-our-projects__price price-slide-our-projects">
+                                                    <span class="price-slide-our-projects__small">От</span>
+                                                    <span class="price-slide-our-projects__big">13 999 000</span>
+                                                    <span class="price-slide-our-projects__small">Руб</span>
+                                                </div>
+
+                                                <ul class="slide-our-projects__characteristics">
+                                                    <li><b>605</b> м³</li>
+                                                    <li><b>2</b> Этажа</li>
+                                                    <li><b>8</b> Комнат</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slider-our-projects__arrow slider-our-projects__arrow--next swiper-button-next">
+                            <img src="@svg/slider-arrow-R.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page__about-us about-us">
+            <div class="about-us__content _container">
+                <div class="section-title">
+                    <div class="section-title__arrow-border">
+                        <div class="section-title__arrow">
+                            <div class="section-title__stick"></div>
+
+                            <img src="@svg/arrow-down.svg" alt="">
+                        </div>
+                    </div>
+
+                    <span class="section-title__text">О нас</span>
+                </div>
+
+                <div class="about-us__grid">
+                    <p class="about-us__text">
+                        Компания TE.HOUSE работает с 1999 года и на сегодняшний день смогла укрепить свой авторитет среди строительных компаний. Мы соблюдаем сроки благодаря умелой координации наших действий. Мы делим работу на этапы и прописываем каждый этап в смете. Мы распределяем работу между командами таким образом, чтобы они не мешали друг другу.
+                    </p>
+
+                    <div class="percentage-about-us">
+                        <div class="percentage-about-us__wrapper">
+                            <div class="percentage-about-us__content">
+                                <span class="percentage-about-us__percentage">100%</span>
+                                <span class="percentage-about-us__subtitle">Довольны</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="about-us__text">
+                        Чтобы обезопаситься, мы заключаем договор в нашем офисе. Вы также можете ознакомиться с номером лицензии здесь. Вы можете убедиться в качестве нашей работы, посмотрев на наши предыдущие объекты и пообщавшись с довольными клиентами. Мы покупаем строительные материалы только в проверенных точках и показываем клиенту квитанцию. Если заказчик выбирает строительные материалы по своему вкусу, мы идем с ним и консультируемся.
+                    </p>
+                    <p class="about-us__text about-us__text--full-width">
+                        Очень часто многие бригады упускают из виду моменты, которые всплывут позже. Мы учитываем в смете все дополнительные и неочевидные затраты для заказчика. Максимальное превышение сметы составляет 5%!
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="page__testimonial testimonial">
+            <div class="testimonial__content">
+                <div class="_container">
+                    <div class="section-title">
+                        <div class="section-title__arrow-border">
+                            <div class="section-title__arrow">
+                                <div class="section-title__stick"></div>
+
+                                <img src="@svg/arrow-down.svg" alt="">
+                            </div>
+                        </div>
+
+                        <span class="section-title__text">Отзывы</span>
+                    </div>
+                </div>
+
+                <div class="testimonial__slider-container swiper-container _container">
+                    <div class="testimonial__slider swiper-wrapper">
+                        <div class="testimonial__slide swiper-slide slide-testimonial">
+                            <div class="slide-testimonial__header">
+                                <div class="slide-testimonial__avatar ibg">
+                                    <img src="@img/slide-testimonial/avatar-1.png" alt="">
+                                </div>
+
+                                <div class="slide-testimonial__metainfo">
+                                    <span class="slide-testimonial__name">Евгения, 27 лет. Заказчик</span>
+                                    <div class="slide-testimonial__stars">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="slide-testimonial__text">
+                                Вместе с мужем мы мечтали построить для себя дачу, но понятия не имели, как осуществить эту мечту. Я начала искать строительную компанию в Интернете и нашла TE.HOUSE. Я очень переживала из-за строительства дачи, советов, ссор с мужем... Но когда я, наконец, решила сделать заказ в этой компании и впервые увидела рабочих, я сразу понял, что здесь работают настоящие профессионалы своего дела, после знакомства с ними я ни на секунду не пожалела, что выбрала TE.HOUSE. Они осуществили нашу мечту! Удивительный дом, а главное, он был построен качественно и в кратчайшие сроки!
+                            </p>
+                        </div>
+
+                        <div class="testimonial__slide swiper-slide slide-testimonial">
+                            <div class="slide-testimonial__header">
+                                <div class="slide-testimonial__avatar ibg">
+                                    <img src="@img/slide-testimonial/avatar-2.png" alt="">
+                                </div>
+
+                                <div class="slide-testimonial__metainfo">
+                                    <span class="slide-testimonial__name">Виктор, 43 года. Заказчик</span>
+                                    <div class="slide-testimonial__stars">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="slide-testimonial__text">
+                                Что касается работы этой компании, то скажу одно, цена и качество вполне оправданы. Кто гоняется за дешевыми ценами от неизвестных людей, дома развалятся через полгода, если не меньше, то нечего жаловаться и писать, что цены их не устраивают. Вот я, например, ну, у меня не хватило денег на весь заказ, я сделал частичную рассрочку. Я не хотел бежать в дешевую контору, мой друг был так обманут,он заказал коттедж у частного владельца, так  они не закончили заказ и исчезли, он был таким разочарованным. Я хотел избежать этого, потому что скупой платит дважды, поэтому сразу заказал коттедж в большой компании и не прогадал. Они сделали все супер, хотя проект был сложным. Так что мой совет: смотрите в первую очередь на качество! И спасибо TE.HOUSE за выполненный заказ.
+                            </p>
+                        </div>
+
+                        <div class="testimonial__slide swiper-slide slide-testimonial">
+                            <div class="slide-testimonial__header">
+                                <div class="slide-testimonial__avatar ibg">
+                                    <img src="@img/slide-testimonial/avatar-3.png" alt="">
+                                </div>
+
+                                <div class="slide-testimonial__metainfo">
+                                    <span class="slide-testimonial__name">Олег, 38 лет. Заказчик</span>
+                                    <div class="slide-testimonial__stars">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="slide-testimonial__text">
+                                Наш дом называется Мечтой, и это не метафора, это буквально)) Мы въехали весной, строили зимой – проблем из-за холода не было, а менеджер и рабочие сказали, что наоборот, здорово, что они решили строить зимой, не было дождей. Дом собирается очень быстро, я был удивлен, как каркас вдруг появился на участке за считанные дни))
+                            </p>
+                        </div>
+
+                        <!-- repeats -->
+
+                        <div class="testimonial__slide swiper-slide slide-testimonial">
+                            <div class="slide-testimonial__header">
+                                <div class="slide-testimonial__avatar ibg">
+                                    <img src="@img/slide-testimonial/avatar-1.png" alt="">
+                                </div>
+
+                                <div class="slide-testimonial__metainfo">
+                                    <span class="slide-testimonial__name">Евгения, 27 лет. Заказчик</span>
+                                    <div class="slide-testimonial__stars">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="slide-testimonial__text">
+                                Вместе с мужем мы мечтали построить для себя дачу, но понятия не имели, как осуществить эту мечту. Я начала искать строительную компанию в Интернете и нашла TE.HOUSE. Я очень переживала из-за строительства дачи, советов, ссор с мужем... Но когда я, наконец, решила сделать заказ в этой компании и впервые увидела рабочих, я сразу понял, что здесь работают настоящие профессионалы своего дела, после знакомства с ними я ни на секунду не пожалела, что выбрала TE.HOUSE. Они осуществили нашу мечту! Удивительный дом, а главное, он был построен качественно и в кратчайшие сроки!
+                            </p>
+                        </div>
+
+                        <div class="testimonial__slide swiper-slide slide-testimonial">
+                            <div class="slide-testimonial__header">
+                                <div class="slide-testimonial__avatar ibg">
+                                    <img src="@img/slide-testimonial/avatar-2.png" alt="">
+                                </div>
+
+                                <div class="slide-testimonial__metainfo">
+                                    <span class="slide-testimonial__name">Виктор, 43 года. Заказчик</span>
+                                    <div class="slide-testimonial__stars">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="slide-testimonial__text">
+                                Что касается работы этой компании, то скажу одно, цена и качество вполне оправданы. Кто гоняется за дешевыми ценами от неизвестных людей, дома развалятся через полгода, если не меньше, то нечего жаловаться и писать, что цены их не устраивают. Вот я, например, ну, у меня не хватило денег на весь заказ, я сделал частичную рассрочку. Я не хотел бежать в дешевую контору, мой друг был так обманут,он заказал коттедж у частного владельца, так  они не закончили заказ и исчезли, он был таким разочарованным. Я хотел избежать этого, потому что скупой платит дважды, поэтому сразу заказал коттедж в большой компании и не прогадал. Они сделали все супер, хотя проект был сложным. Так что мой совет: смотрите в первую очередь на качество! И спасибо TE.HOUSE за выполненный заказ.
+                            </p>
+                        </div>
+
+                        <div class="testimonial__slide swiper-slide slide-testimonial">
+                            <div class="slide-testimonial__header">
+                                <div class="slide-testimonial__avatar ibg">
+                                    <img src="@img/slide-testimonial/avatar-3.png" alt="">
+                                </div>
+
+                                <div class="slide-testimonial__metainfo">
+                                    <span class="slide-testimonial__name">Олег, 38 лет. Заказчик</span>
+                                    <div class="slide-testimonial__stars">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="slide-testimonial__text">
+                                Наш дом называется Мечтой, и это не метафора, это буквально)) Мы въехали весной, строили зимой – проблем из-за холода не было, а менеджер и рабочие сказали, что наоборот, здорово, что они решили строить зимой, не было дождей. Дом собирается очень быстро, я был удивлен, как каркас вдруг появился на участке за считанные дни))
+                            </p>
+                        </div>
+
+                        <!-- repeats -->
+
+                        <div class="testimonial__slide swiper-slide slide-testimonial">
+                            <div class="slide-testimonial__header">
+                                <div class="slide-testimonial__avatar ibg">
+                                    <img src="@img/slide-testimonial/avatar-1.png" alt="">
+                                </div>
+
+                                <div class="slide-testimonial__metainfo">
+                                    <span class="slide-testimonial__name">Евгения, 27 лет. Заказчик</span>
+                                    <div class="slide-testimonial__stars">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="slide-testimonial__text">
+                                Вместе с мужем мы мечтали построить для себя дачу, но понятия не имели, как осуществить эту мечту. Я начала искать строительную компанию в Интернете и нашла TE.HOUSE. Я очень переживала из-за строительства дачи, советов, ссор с мужем... Но когда я, наконец, решила сделать заказ в этой компании и впервые увидела рабочих, я сразу понял, что здесь работают настоящие профессионалы своего дела, после знакомства с ними я ни на секунду не пожалела, что выбрала TE.HOUSE. Они осуществили нашу мечту! Удивительный дом, а главное, он был построен качественно и в кратчайшие сроки!
+                            </p>
+                        </div>
+
+                        <div class="testimonial__slide swiper-slide slide-testimonial">
+                            <div class="slide-testimonial__header">
+                                <div class="slide-testimonial__avatar ibg">
+                                    <img src="@img/slide-testimonial/avatar-2.png" alt="">
+                                </div>
+
+                                <div class="slide-testimonial__metainfo">
+                                    <span class="slide-testimonial__name">Виктор, 43 года. Заказчик</span>
+                                    <div class="slide-testimonial__stars">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="slide-testimonial__text">
+                                Что касается работы этой компании, то скажу одно, цена и качество вполне оправданы. Кто гоняется за дешевыми ценами от неизвестных людей, дома развалятся через полгода, если не меньше, то нечего жаловаться и писать, что цены их не устраивают. Вот я, например, ну, у меня не хватило денег на весь заказ, я сделал частичную рассрочку. Я не хотел бежать в дешевую контору, мой друг был так обманут,он заказал коттедж у частного владельца, так  они не закончили заказ и исчезли, он был таким разочарованным. Я хотел избежать этого, потому что скупой платит дважды, поэтому сразу заказал коттедж в большой компании и не прогадал. Они сделали все супер, хотя проект был сложным. Так что мой совет: смотрите в первую очередь на качество! И спасибо TE.HOUSE за выполненный заказ.
+                            </p>
+                        </div>
+
+                        <div class="testimonial__slide swiper-slide slide-testimonial">
+                            <div class="slide-testimonial__header">
+                                <div class="slide-testimonial__avatar ibg">
+                                    <img src="@img/slide-testimonial/avatar-3.png" alt="">
+                                </div>
+
+                                <div class="slide-testimonial__metainfo">
+                                    <span class="slide-testimonial__name">Олег, 38 лет. Заказчик</span>
+                                    <div class="slide-testimonial__stars">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="slide-testimonial__text">
+                                Наш дом называется Мечтой, и это не метафора, это буквально)) Мы въехали весной, строили зимой – проблем из-за холода не было, а менеджер и рабочие сказали, что наоборот, здорово, что они решили строить зимой, не было дождей. Дом собирается очень быстро, я был удивлен, как каркас вдруг появился на участке за считанные дни))
+                            </p>
+                        </div>
+
+                        <!-- repeats -->
+
+                        <div class="testimonial__slide swiper-slide slide-testimonial">
+                            <div class="slide-testimonial__header">
+                                <div class="slide-testimonial__avatar ibg">
+                                    <img src="@img/slide-testimonial/avatar-1.png" alt="">
+                                </div>
+
+                                <div class="slide-testimonial__metainfo">
+                                    <span class="slide-testimonial__name">Евгения, 27 лет. Заказчик</span>
+                                    <div class="slide-testimonial__stars">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="slide-testimonial__text">
+                                Вместе с мужем мы мечтали построить для себя дачу, но понятия не имели, как осуществить эту мечту. Я начала искать строительную компанию в Интернете и нашла TE.HOUSE. Я очень переживала из-за строительства дачи, советов, ссор с мужем... Но когда я, наконец, решила сделать заказ в этой компании и впервые увидела рабочих, я сразу понял, что здесь работают настоящие профессионалы своего дела, после знакомства с ними я ни на секунду не пожалела, что выбрала TE.HOUSE. Они осуществили нашу мечту! Удивительный дом, а главное, он был построен качественно и в кратчайшие сроки!
+                            </p>
+                        </div>
+
+                        <div class="testimonial__slide swiper-slide slide-testimonial">
+                            <div class="slide-testimonial__header">
+                                <div class="slide-testimonial__avatar ibg">
+                                    <img src="@img/slide-testimonial/avatar-2.png" alt="">
+                                </div>
+
+                                <div class="slide-testimonial__metainfo">
+                                    <span class="slide-testimonial__name">Виктор, 43 года. Заказчик</span>
+                                    <div class="slide-testimonial__stars">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="slide-testimonial__text">
+                                Что касается работы этой компании, то скажу одно, цена и качество вполне оправданы. Кто гоняется за дешевыми ценами от неизвестных людей, дома развалятся через полгода, если не меньше, то нечего жаловаться и писать, что цены их не устраивают. Вот я, например, ну, у меня не хватило денег на весь заказ, я сделал частичную рассрочку. Я не хотел бежать в дешевую контору, мой друг был так обманут,он заказал коттедж у частного владельца, так  они не закончили заказ и исчезли, он был таким разочарованным. Я хотел избежать этого, потому что скупой платит дважды, поэтому сразу заказал коттедж в большой компании и не прогадал. Они сделали все супер, хотя проект был сложным. Так что мой совет: смотрите в первую очередь на качество! И спасибо TE.HOUSE за выполненный заказ.
+                            </p>
+                        </div>
+
+                        <div class="testimonial__slide swiper-slide slide-testimonial">
+                            <div class="slide-testimonial__header">
+                                <div class="slide-testimonial__avatar ibg">
+                                    <img src="@img/slide-testimonial/avatar-3.png" alt="">
+                                </div>
+
+                                <div class="slide-testimonial__metainfo">
+                                    <span class="slide-testimonial__name">Олег, 38 лет. Заказчик</span>
+                                    <div class="slide-testimonial__stars">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                        <img src="@svg/star.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="slide-testimonial__text">
+                                Наш дом называется Мечтой, и это не метафора, это буквально)) Мы въехали весной, строили зимой – проблем из-за холода не было, а менеджер и рабочие сказали, что наоборот, здорово, что они решили строить зимой, не было дождей. Дом собирается очень быстро, я был удивлен, как каркас вдруг появился на участке за считанные дни))
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__slider-pagination swiper-pagination">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        @@include('html/_footer.html', {})
+    </main>
+
+</body>
+</html>
+
+

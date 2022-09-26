@@ -1,0 +1,43 @@
+.section-title {
+    @include adaptive-value('padding-top', 200, 100, 1);
+    color: $primary-color;
+    align-items: center;
+    display: flex;
+
+    &__arrow {
+        background-color: $secondary-color;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 50%;
+        display: flex;
+        height: 52px;
+        width: 52px;
+    }
+
+    &__arrow-border {
+        filter: drop-shadow(0px 0px 55px $secondary-color);
+        border: 3px solid rgba(243, 150, 4, 0.35);
+        height: calc(52px + 25px);
+        width: calc(52px + 25px);
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        display: flex;
+    }
+
+    &__stick {
+        @include adaptive-value('height', 200, 100, 1);
+        background-color: $secondary-color;
+        position: absolute;
+        bottom: 100%;
+        width: 2px;
+    }
+
+    &__text {
+        @include adaptive-value('font-size', 25, 18, 1);
+        font-family: $secondary-font;
+        font-weight: $bold-font;
+        margin-left: 18px;
+    }
+}

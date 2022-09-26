@@ -1,0 +1,121 @@
+.main-footer {
+    font-family: $secondary-font;
+    background-color: #111111;
+    color: $primary-color;
+
+    &__container {
+        @include adaptive-value('padding-bottom', 54, 20, 1);
+        @include adaptive-value('padding-top', 54, 20, 1);
+        
+    }
+
+    &__row {
+        align-items: center;
+        display: flex;
+
+        &:not(:last-child) {
+            @include adaptive-value('margin-bottom', 60, 20, 1);
+        }
+
+        @media (max-width: $md3 + px) {
+            align-items: flex-start;
+            flex-direction: column;
+
+            & > div:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__copyright {
+        font-family: $special-font;
+        text-align: center;
+        color: #C5CBD9;
+        flex: 1 1 auto;
+        display: block;
+        font-size: 15;
+    }
+
+    &__contacts {
+        flex-direction: column;
+        display: flex;
+    }
+
+    &__address {
+        @include adaptive-value('font-size', 20, 16, 1);
+
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__phone {
+        @include adaptive-value('font-size', 20, 16, 1);
+        font-weight: $bold-font;
+        color: #808080;
+    }
+
+    &__social {
+        flex: 1 1 auto;
+
+        ul {
+            justify-content: center;
+            display: flex;
+
+            li {
+                border: 1px solid #FFF;
+                background-size: cover;
+                box-sizing: border-box;
+                border-radius: 50%;
+                cursor: pointer;
+                margin: 0 7.5px;
+                padding: 10px;
+
+                div {
+                    height: 25px;
+                    width: 25px;
+                }
+
+                &:hover {
+                    opacity: .7;
+                }
+            }
+        }
+    }
+
+    &__get-consultation {
+        @include adaptive-value('padding-bottom', 25, 12, 1);
+        @include adaptive-value('padding-right', 12, 8, 1);
+        @include adaptive-value('padding-left', 12, 8, 1);
+        @include adaptive-value('padding-top', 25, 12, 1);
+        font-weight: $bold-font;
+        position: relative;
+        border-radius: 5px;
+        font-size: 15px;
+        cursor: pointer;
+
+        &::before {
+            filter: drop-shadow(0px 0px 4px $secondary-color);
+            transition: background-color .3s ease;
+            border: 1px solid $secondary-color;
+            border-radius: inherit;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            content: "";
+            left: 0;
+            top: 0;
+        }
+
+        &:hover {
+            &::before {
+                background-color: $secondary-color;
+            }
+        }
+
+        span {
+            position: relative;
+            z-index: 5;
+        }
+    }
+}

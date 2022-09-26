@@ -1,0 +1,148 @@
+.main-header {
+    color: $primary-color;
+    position: absolute;
+    min-height: 40px;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+    &._scroll {
+        .main-header__wrapper {
+            background-color: rgba(255, 255, 255);
+        }
+
+        .main-header__content {
+            min-height: 50px;
+        }
+
+        @media (min-width: $md2 + px) {
+            .main-header__content {
+                font-weight: $bold-font;
+                color: #1A1A1A;
+            }
+        }
+    }
+
+    &__wrapper {
+        transition: background-color .5s ease;
+        position: fixed;
+        width: 100%;
+        z-index: 50;
+        left: 0;
+        top: 0;
+    }
+
+    &__content {
+        @include adaptive-value('min-height', 145, 100, 1);
+        transition: min-height .5s ease;
+        align-items: center;
+        display: flex;
+    }
+
+    &__logo a {
+        transition: opacity .3s ease;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    &__nav {
+        flex: 1 1 auto;
+    }
+
+    &__list {
+        justify-content: center;
+        display: flex;
+    }
+
+    &__nav-item {
+        transition: color .3s ease;
+
+        &:not(:last-child) {
+            @include adaptive-value('margin-right', 89, 50, 1);
+        }
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+
+    &__phone {
+        font-family: $secondary-font;
+        font-weight: $bold-font;
+        align-items: center;
+        font-size: 18px;
+        display: flex;
+
+        img {
+            margin-right: 15px;
+        }
+
+        a {
+            transition: color .3s ease;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+
+    @media (max-width: #{$md2 + px}) {
+        &__nav,
+        &__phone {
+            display: none;
+        }
+
+        &__logo {
+            flex: 1 1 auto;
+        }
+    }
+
+    &__burger {
+        @media (min-width: #{$md2 + px}) {
+            display: none;
+        }
+
+        position: relative;
+        cursor: pointer;
+        height: 20px;
+        width: 28px;
+
+        &::before,
+        span,
+        &::after {
+            background-color: $secondary-color;
+            transition: width .2s ease-in;
+            position: absolute;
+            display: block;
+            height: 2px;
+            right: 0;
+        }
+
+        &::before {
+            content: "";
+            width: 28px;
+            top: 1px;
+        }
+
+        span {
+            width: 18px;
+            top: 10px;
+        }
+
+        &::after {
+            width: 23px;
+            content: "";
+            bottom: 0;
+        }
+
+        &:hover {
+            &::before,
+            span,
+            &::after {
+                width: 28px !important;
+            }
+        }
+    }
+}
